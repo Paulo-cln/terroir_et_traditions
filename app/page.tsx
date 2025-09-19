@@ -233,10 +233,7 @@ export default function Page() {
                   <PaypalButton
                     key={Math.round(total)}
                     total={total / 100}
-                    onSuccess={(details: any) => {
-                      console.log('PayPal success', details)
-                      window.location.href = '/success'
-                    }}
+                    successRedirectUrl="/success"
                   />
                 </div>
               </div>
